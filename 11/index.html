@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap_files/bootstrap.min.css" />
+  </head>
+  <style>
+    #triangle_bottom{
+        transform: rotate(0.5turn);
+    }
+    .myClass{
+        visibility: hidden;
+    }
+  </style>
+  <body>
+    <div class="container my-5">
+      <h3>Position</h3>
+      <div class="position-relative bg-info" style="height: 300px">
+        <div class="position-absolute top-0 start-0 p-2 bg-black"></div>
+        <div class="position-absolute top-0 end-0 p-2 bg-black"></div>
+        <div class="position-absolute top-50 start-50 p-2 bg-black"></div>
+        <div class="position-absolute bottom-50 end-50 p-2 bg-black"></div>
+        <div class="position-absolute bottom-0 start-0 p-2 bg-black"></div>
+        <div class="position-absolute bottom-0 end-0 p-2 bg-black"></div>
+      </div>
+      <hr />
+      <h3>Position Middle</h3>
+      <div class="position-relative bg-primary" style="height: 300px">
+        <div
+          class="position-absolute top-0 start-0 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-0 start-50 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-0 start-100 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-50 start-0 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-50 start-50 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-50 start-100 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-100 start-0 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-100 start-50 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-100 start-100 p-2 bg-black translate-middle"
+        ></div>
+      </div>
+      <hr />
+      <h3>Use translate-middle-x and translate-middle-y</h3>
+      <div class="position-relative bg-light" style="height: 300px">
+        <div class="position-absolute top-0 atart-0 p-2 bg-black"></div>
+        <div
+          class="position-absolute top-0 start-50 p-2 bg-black translate-middle-x"
+        ></div>
+        <div class="position-absolute top-0 end-0 p-2 bg-black"></div>
+        <div
+          class="position-absolute top-50 start-0 p-2 bg-black translate-middle-y"
+        ></div>
+        <div
+          class="position-absolute top-50 start-50 p-2 bg-black translate-middle"
+        ></div>
+        <div
+          class="position-absolute top-50 end-0 p-2 bg-black translate-middle-y"
+        ></div>
+        <div class="position-absolute start-0 bottom-0 p-2 bg-black"></div>
+        <div
+          class="position-absolute start-50 bottom-0 p-2 bg-black translate-middle-x"
+        ></div>
+        <div class="position-absolute bottom-0 end-0 p-2 bg-black"></div>
+      </div>
+      <hr />
+      <h3>Examples</h3>
+      <br />
+      <span
+        class="bg-primary fs-1 py-2 px-4 rounded-3 text-center position-relative text-light"
+      >
+        Mail
+        <div
+          class="bg-secondary rounded-pill position-absolute top-0 start-100 translate-middle fw-bold px-2 fs-6"
+        >
+          +99
+        </div>
+      </span>
+      <br />
+      <br />
+      <br />
+      <br />
+      <span class="bg-dark text-white rounded-3 p-3 position-relative findClass">
+        Marker
+        <div class="position-absolute text-danger start-50 top-100  translate-middle text-dark myClass" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-triangle-fill" viewBox="0 0 16 16" id="triangle_bottom">
+                <path fill-rule="evenodd" d="M7.022 1.566a1.13 1.13 0 0 1 1.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"/>
+              </svg>
+        </div>
+    </span>
+    <br>
+    <br>
+    <br>
+    <span class="bg-primary rounded-3 px-3 py-2 text-white position-relative">
+        Alerts
+    <div class="position-absolute rounded-circle bg-danger p-2 top-0 end-0 translate-middle-y border border-1 border-white"></div>
+    </span>
+    </div>
+    <br />
+    <script>
+        let elm = document.getElementsByClassName('findClass')[0];
+        elm.addEventListener("mouseover",function(){
+            elm.children[0].classList.remove('myClass')
+        });
+        elm.addEventListener("mouseout",function(){
+            elm.children[0].classList.add('myClass')
+        });
+    </script>
+    <script src="../bootstrap_files/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

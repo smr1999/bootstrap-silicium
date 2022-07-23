@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap_files/bootstrap.min.css">
+</head>
+
+<body>
+    <div class="container my-3">
+        <h3>Text Alignment</h3>
+        <p class="text-start">Start aligned text on all viewport sizes.</p>
+        <p class="text-center">Center aligned text on all viewport sizes.</p>
+        <p class="text-end">End aligned text on all viewport sizes.</p>
+
+        <p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+        <p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+        <p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+        <p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+        <h4>Better Example</h4>
+        <br>
+        <!-- Only start text in mobile -->
+        <h5 class="text-start text-sm-center">Hello</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ipsum quaerat unde id minima cupiditate illum
+            eius cum temporibus dicta eligendi ab quae nesciunt sint eos, iure nihil illo, voluptas error voluptatum
+            necessitatibus blanditiis enim. Aliquam enim est nihil sed nam corporis consequuntur! Nisi voluptas neque
+            officiis laboriosam asperiores blanditiis doloremque. Voluptas blanditiis nemo aspernatur inventore ea ut!
+            Et, error possimus impedit reprehenderit quibusdam modi ullam similique sunt voluptatum blanditiis dolore ea
+            nesciunt consectetur voluptate? Animi aspernatur rerum ipsam veritatis provident libero, harum est. Velit
+            rerum minima sit modi sunt harum natus at, maiores asperiores delectus magnam, porro dolorem et!</p>
+        <hr>
+        <h3>Text Wrap</h3>
+        <div class="badge bg-primary text-wrap" style="width: 6rem;">
+            This text should wrap.
+        </div>
+        <br>
+        <br>
+        <div class="text-nowrap bg-light border" style="width: 8rem;">
+            This text should overflow the parent.
+        </div>
+        <hr>
+        <h3>Word Break</h3>
+
+        <h5>With word break</h5>
+        <p class="text-break">
+            aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+        <h5>Without word break</h5>
+        <p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        </p>
+        <hr>
+        <h5>Text transform</h5>
+        <p class="text-lowercase">Lowercased text.</p>
+        <p class="text-uppercase">Uppercased text.</p>
+        <p class="text-capitalize">CapiTaliZed text.</p>
+        <hr>
+        <h5>Font size</h5>
+        <p class="fs-1">.fs-1 text</p>
+        <p class="fs-2">.fs-2 text</p>
+        <p class="fs-3">.fs-3 text</p>
+        <p class="fs-4">.fs-4 text</p>
+        <p class="fs-5">.fs-5 text</p>
+        <p class="fs-6">.fs-6 text</p>
+        <hr>
+        <h5>Font weight and style</h5>
+        <p class="fw-bold">Bold text.</p>
+        <p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+        <p class="fw-semibold">Semibold weight text.</p>
+        <p class="fw-normal">Normal weight text.</p>
+        <p class="fw-light">Light weight text.</p>
+        <p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+        <p class="fst-italic">Italic text.</p>
+        <p class="fst-normal">Text with normal font style</p>
+        <hr>
+        <h5>Line height</h5>
+        <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our
+            utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+            customized as needed with our utility API.</p>
+        <p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our
+            utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+            customized as needed with our utility API.</p>
+        <p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our
+            utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+            customized as needed with our utility API.</p>
+        <p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our
+            utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be
+            customized as needed with our utility API.</p>
+        <hr>
+        <h5>Monospace font(for programming code used)</h5>
+        <p>Lorem, <span class="font-monospace">ipsum dolor sit amet consectetur adipisicing elit. Repellendus assumenda
+                doloribus reiciendis atque</span>, quisquam nisi ratione autem. Voluptatibus ipsa cupiditate, vero
+            aperiam nemo qui dicta deserunt, ullam illum corrupti tempora harum sunt similique fuga veritatis quisquam
+            soluta aliquam saepe delectus dolor! Consequatur dicta velit alias ducimus iste consequuntur, quibusdam
+            minima.</p>
+        <h5>Reset color(parent color)</h5>
+        <p class="text-muted">
+            Muted text with a <a href="#" class="text-reset">reset link</a>.
+        </p>
+        <hr>
+        <h5>Text decoration</h5>
+        <p class="text-decoration-underline">This text has a line underneath it.</p>
+        <p class="text-decoration-line-through">This text has a line going through it.</p>
+        <a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+        <hr>
+    </div>
+    <script src="../bootstrap_files/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
